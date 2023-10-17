@@ -47,3 +47,12 @@ Then run:
 ```bash
 audit-tools
 ```
+
+## For developers
+
+For ease of development, the make file contains a few useful commands:
+
+```bash
+make build # Build the binary
+make install # Install the binary in /usr/local/bin
+```
