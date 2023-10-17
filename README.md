@@ -35,3 +35,15 @@ To run the binary, run:
 ```bash
 ./audit-tools
 ```
+
+Or move it to your bin folder:
+
+```bash
+sudo mv audit-tools /usr/local/bin/audit-tools
+```
+
+Then run:
+
+```bash
+audit-tools
+```
