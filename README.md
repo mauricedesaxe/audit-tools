@@ -8,7 +8,19 @@ distributed as a single binary.
 
 ## How to use
 
-### Build
+### Download
+
+1. Find the latest github workflow, usually the latest commit on the `main`
+   branch. Click on the check mark to see the details of the workflow. Then click
+   on "Details" of the "Go / Build" step.
+
+![Github Workflow](/docs/gh-workflow.png)
+
+2. Download the binary from the "Summary" -> "Artifacts" section.
+
+![Artifacts Github](/docs/gh-artifacts.png)
+
+### Or build your own
 
 To build the binary, run:
 
