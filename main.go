@@ -25,6 +25,20 @@ func main() {
 			fmt.Printf("Error walking the path %v: %v\n", ".", err)
 			os.Exit(2)
 		}
+	case "logsol":
+		err := filepath.Walk(".", func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			if filepath.Ext(path) == ".sol" {
+				fmt.Println(path)
+			}
+			return nil
+		})
+		if err != nil {
+			fmt.Printf("Error walking the path %v: %v\n", ".", err)
+			os.Exit(2)
+		}
 	default:
 		fmt.Printf("Unknown command: %s\n", os.Args[1])
 		os.Exit(2)
